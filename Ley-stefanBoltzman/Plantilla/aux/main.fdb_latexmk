@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1693146981 "main.tex" "aux/main.pdf" "main" 1693146982 0
+["pdflatex"] 1693157470 "main.tex" "aux/main.pdf" "main" 1693157470 0
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -54,6 +54,8 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty" 1667332637 3052 30236f0cc243a8651b82240dfd2e8b9d ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1667332637 2462 8ce5f9a9c63002f2c1af03c262cf29af ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo" 1667332637 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty" 1678653221 55778 14d5c99aa26410e440820bb9ea5b8b3a ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty" 1678653221 71836 1a735454ad10692452eb2f2fc37f3865 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -81,15 +83,17 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1685663342 4643411 5ced174c6d521e21dd58a10751c00482 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1685663376 7892046 44fa0cc7526a98d95bcce71d18522d8e ""
   "/usr/local/texlive/2023/texmf.cnf" 1685663338 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "aux/main.aux" 1693146982 1592 317053f94954d2f7352e78e11e2ee105 "pdflatex"
-  "aux/main.out" 1693146982 590 f9d836ad662d25b7fa3d9ccd838e55d5 "pdflatex"
+  "aux/main.aux" 1693157470 2308 7d15a0d60e088a554093e2e40199baf0 "pdflatex"
+  "aux/main.out" 1693157470 590 f9d836ad662d25b7fa3d9ccd838e55d5 "pdflatex"
   "conclusiones/conclusiones.tex" 1691946345 733 8bb2305d5f06fd076b7fa59f2d4939ad ""
   "introduccion/imagenes/Tabla.jpeg" 1691946852 49679 645c83834bf7f6192846306941eac199 ""
   "introduccion/introduccion.tex" 1691947113 903 cf8c167663e48f60844e1cca0d986e43 ""
-  "main.tex" 1691950781 733 cd916a092cd3ce4e31d1779ee5209d14 ""
+  "main.tex" 1693155814 789 82f8b812dca2b6417ff41c33c9ee845f ""
   "montajeExperimental/montaje.tex" 1691946214 741 c2eb1e248c4297b1649db5907c61a568 ""
   "referencias/referencias.tex" 1691946651 174 5e6a07f2ff61cbd6a5e7913bc745d126 ""
-  "resultados/resultados.tex" 1693146980 1589 978ddef214bedeb827901defbdd066a1 ""
+  "resultados/imagenes/distancia.png" 1693156748 56040 15893d3fceab14a557aff949f0ba6f1e ""
+  "resultados/imagenes/stefan.png" 1693157236 36196 a73c88c06aef28d7ca832c232b0aae5d ""
+  "resultados/resultados.tex" 1693157470 1390 56e07937f5379779e2a1121ee42c0849 ""
   "resumen/resumen.tex" 1691945533 728 81190ba897c5ba675b2bae3929de750d ""
   (generated)
   "aux/main.aux"
