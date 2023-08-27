@@ -1,0 +1,29 @@
+\documentclass[twocolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% Centrar títulos de secciones
+\titleformat{\section}
+{\normalfont\Large\bfseries\centering}
+{\thesection.}{1em}{}
+
+% Numeración con números romanos
+\renewcommand{\thesection}{\Roman{section}}
+
+\title{Esto es un título uwu}
+\author{\textit{K.D. Marin Baez}, \textit{D.C. Mora Duitama}, \textit{E. Velasquez Sarmiento}}
+\date{}
+
+\begin{document}
+\maketitle
+\input{resumen/resumen}
+\input{introduccion/introduccion}
+\input{montajeExperimental/montaje}
+\input{resultados/resultados}
+\input{conclusiones/conclusiones}
+\input{referencias/referencias}
+\end{document}
