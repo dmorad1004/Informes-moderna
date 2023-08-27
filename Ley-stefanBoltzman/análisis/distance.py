@@ -13,20 +13,21 @@ print("Pendiente:", slope)
 print("Intercepto (log(C)):", intercept)
 
 # Graficar
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(3.5, 2.5))
 
 ax.loglog(distances, powers, 'o', label='Datos')
 ax.loglog(distances, np.exp(intercept) * distances ** slope,
           'r-', label=f'Ajuste: Pendiente {slope:.2f}')
 
-ax.set_xlabel("Distancia (cm)", fontsize=14)
-ax.set_ylabel("Potencia (mW)", fontsize=14)
+ax.set_xlabel("Distancia (cm)")
+ax.set_ylabel("Potencia (mW)")
 
-ax.set_title(
-    "Potencia en función de la distancia, a una temperatura constante", fontsize=16)
-ax.legend()
+# ax.set_title(
+# "Potencia en función de la distancia, a una temperatura constante", fontsize=16)
+ax.legend(fontsize="small")
 
-plt.savefig("../Plantilla/resultados/imagenes/distancia.png")
+plt.tight_layout()
+plt.savefig("../Plantilla/resultados/imagenes/distancia.png", dpi=300)
 plt.show()
 
 

@@ -14,9 +14,14 @@ voltages = np.array([3.0, 4.5, 6.5, 9.0, 11.8])
 resistances = voltages/currents
 filament_temperatures = T_0 + (resistances - R_O)/(TEMPERATURE_COEFFICIENT*R_O)
 
+
+constant_temperature = T_0 + (10.0/1.59 - R_O)/(TEMPERATURE_COEFFICIENT*R_O)
+
+print(constant_temperature)
+
 powers = np.array([12.3, 7.9, 7.2, 7.1, 7.1])/22
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(3.5, 2.5))
 
 # Realizamos el ajuste lineal en el espacio log-log.
 
@@ -26,16 +31,17 @@ slope, intercept, r_value, p_value, std_err = linregress(
 # intercept, 'r', label=f'Pendiente = {slope:.2f}')
 
 ax.scatter(filament_temperatures, powers, color="black")
-ax.set_xlabel("Temperatura (K)", fontsize=14)
-ax.set_ylabel("Potencia (mW)", fontsize=14)
+ax.set_xlabel("Temperatura (K)")
+ax.set_ylabel("Potencia (mW)")
 
 ax.set_yscale("log")
 ax.set_xscale("log")
 
 
-ax.set_title("Potencia radiada en función de la temperatura", fontsize=18)
+# ax.set_title("Potencia radiada en función de la temperatura", fontsize=18)
 
-plt.savefig("../Plantilla/resultados/imagenes/stefan.png")
+plt.tight_layout()
+plt.savefig("../Plantilla/resultados/imagenes/stefan.png", dpi=300)
 
 plt.show()
 
