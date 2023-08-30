@@ -1,0 +1,32 @@
+\documentclass[twocolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{caption}
+
+% Centrar títulos de secciones
+\titleformat{\section}
+{\normalfont\Large\bfseries\centering}
+{\thesection.}{1em}{}
+
+\captionsetup[table]{name=Tabla}
+
+% Numeración con números romanos
+\renewcommand{\thesection}{\Roman{section}}
+
+\title{Ley de Stefan-Boltzmann}
+\author{\textit{K.D. Marin Baez}, \textit{D.C. Mora Duitama}, \textit{E. Velasquez Sarmiento}}
+\date{}
+
+\begin{document}
+\maketitle
+\input{resumen/resumen}
+\input{introduccion/introduccion}
+\input{montajeExperimental/montaje}
+\input{resultados/resultados}
+\input{conclusiones/conclusiones}
+\input{referencias/referencias}
+\end{document}

@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from scipy.stats import linregress
 
 distances = np.arange(1, 11, 1.0)
 powers = np.array([58.6, 33.7, 22.0, 15.0,
@@ -9,8 +10,12 @@ powers = np.array([58.6, 33.7, 22.0, 15.0,
 # Regresión lineal
 slope, intercept = np.polyfit(np.log(distances), np.log(powers), 1)
 
-print("Pendiente:", slope)
+slope, intercept, r_value, p_value, std_err = linregress(
+    np.log(distances), np.log(powers))
+
+print("Pendiente:", f"{slope} +- {std_err}")
 print("Intercepto (log(C)):", intercept)
+print("R^2 :", r_value*r_value)
 
 # Graficar
 fig, ax = plt.subplots(figsize=(3.5, 2.5))
@@ -19,12 +24,15 @@ ax.loglog(distances, powers, 'o', label='Datos')
 ax.loglog(distances, np.exp(intercept) * distances ** slope,
           'r-', label=f'Ajuste: Pendiente {slope:.2f}')
 
-ax.set_xlabel("Distancia (cm)")
-ax.set_ylabel("Potencia (mW)")
+# Aumentar la densidad de ticks en los ejes log-log
+
+ax.set_xlabel("Log Distancia (cm)")
+ax.set_ylabel("Log Potencia (mW)")
 
 # ax.set_title(
 # "Potencia en función de la distancia, a una temperatura constante", fontsize=16)
 ax.legend(fontsize="small")
+
 
 plt.tight_layout()
 plt.savefig("../Plantilla/resultados/imagenes/distancia.png", dpi=300)
